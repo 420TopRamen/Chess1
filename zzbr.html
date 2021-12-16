@@ -3,11 +3,8 @@
   <script type='text/javascript' src='https://code.jquery.com/jquery-1.12.4.js'></script>
 <script type='text/javascript'>
     function myFunction() {
-      if(document.getElementById("myIMG").style.display = "none"){
-
-    document.getElementById("myIMG").style.display = "block";
-  }else{
-    document.getElementsByID("myIMG").style.display = "none";
+      var img = document.getElementById(myIMG);
+    img.style.visibility = (visible ? 'visible' : 'hidden');
   }
   </script>
 </head>
@@ -22,7 +19,7 @@
       width="245"
       height="221"
   />
-  <div id="myDIV" style: display = "none">
+  <div id="myDIV">
     <img id="myIMG"
         src="https://i.imgur.com/qWLYisO.png"
         alt="As you can see. Bleep Bloop"
